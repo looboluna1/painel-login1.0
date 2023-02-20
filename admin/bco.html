@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js"></script>
+    <title>Painel Admin</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
+  </head>
+  <body>
+    <header>
+      <h1>PAINEL ADM 1.0</h1>
+    </header>
+
+    <main>
+      <div class="title">
+        <h2>Painel ADM 1.0</h2>
+      </div>
+
+      <div class="users">
+        <div class="lineInput">
+          <label>Usuario</label>
+          <input type="text" id="login" />
+        </div>
+
+        <div class="lineInput">
+          <label>senha</label>
+          <input type="password" id="senha" />
+        </div>
+
+        <button class="btn-add" id="btn-add" onclick="user.salvar()"> Adicionar User</button>
+        <button class="btn-remove" onclick="user.cancelar()">Limpar</button>
+      </div>
+      <div class="content">
+        <table border="1">
+          <thead>
+            <th>ID</th>
+            <th class="center">Usuario</th>
+            <th>senha</th>
+            <th>Ações</th>
+          </thead>
+          <tbody id="tbody">
+
+
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
